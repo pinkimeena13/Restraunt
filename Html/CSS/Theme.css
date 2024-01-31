@@ -1,0 +1,72 @@
+
+:root {
+    --orangered-color:orangered;
+    --DarkBrown-color:#4d312c;
+    --lightPink-color:#fff4f2;
+    --white-color:white;
+    --lightGray-color:lightgray;
+    --cream-color:#F5F5DC;
+    --MustardYellow-color:#FFDB58;
+    --Lavender-color:#c4b2e2;
+
+  }
+ol{
+    list-style: none;
+ 
+}
+ol li{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+ ol li:nth-of-type(1){
+    /* background-color: green; */
+    background-color: var(--cream-color);
+ }
+ ol li:nth-of-type(2){
+    background-color: skyblue;
+ }
+ ol li:nth-of-type(3){
+    background-color: var(--MustardYellow-color);
+ }
+ ol li:nth-of-type(4){
+    background-color: var(--lightPink-color);
+ }
+ ol li:nth-of-type(5){
+    background-color: pink;
+ }
+
+ ol li:nth-of-type(6){
+    background-color: var(--lightGray-color);
+ }
+ ol li:nth-of-type(7){
+    background-color: var(--Lavender-color);
+ }
+ .cream {
+    background-color: var(--cream-color);
+
+ }
+ 
+ .skyblue  {
+    background-color: skyblue;
+
+ }
+ .MustartYellow {
+    background-color: var(--MustardYellow-color);
+ }
+ .Default { 
+    background-color: var(--lightPink-color);
+ }
+ .pink {
+    background-color: pink;
+ }
+.lightgray {
+    background-color: var(--lightGray-color);
+}
+.Lavender{
+    background-color: var(--Lavender-color);
+}
+/* .Lavender .container{
+    background-color: var(--Lavender-color);
+} */

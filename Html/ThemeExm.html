@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theme</title>
+    <style>
+        body{
+            background-color: #EEE;
+            padding: 0;
+            margin: 0;
+        }
+        ul{
+            list-style: none;
+            margin: 150px auto;
+            width: 350px;
+            background-color: #FFF;
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-around;
+        }
+        ul li{
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+        }
+         ul li:nth-of-type(1){
+            background-color: green;
+         }
+         ul li:nth-of-type(2){
+            background-color: blue;
+         }
+         ul li:nth-of-type(3){
+            background-color: red;
+         }
+         ul li:nth-of-type(4){
+            background-color: yellow;
+         }
+         ul li:nth-of-type(5){
+            background-color: pink;
+         }
+         .content{
+            width: 600px ;
+            padding: 30px ;
+            margin: 0 auto;
+            background-color: black;
+            border: 5px solid white;
+            box-shadow: 0 1px 4px black;
+         }
+         .green .content{
+            background-color: green;
+         }
+         .blue .content{
+            background-color: blue;
+
+         }
+         .red .content{
+            background-color: red;
+         }
+         .yellow .content{
+            background-color: yellow;
+         }
+         .pink .content{
+            background-color: pink;
+         }
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li data-color="green"></li>
+        <li data-color="blue"></li>
+        <li data-color="red"></li>
+        <li data-color="yello"></li>
+        <li data-color="pink"></li>
+    </ul>
+    <div class="content"></div>
+    
+    <script>
+        const element = document.querySelectorAll('ul li');
+        const list =[];
+        document.body.classList.add(localStorage.getItem('color'))
+        element.forEach(e =>{
+            list.push(e.getAttribute('data-color'));
+            e.addEventListener('click', function(){
+                document.body.classList.remove(...list);
+                document.body.classList.add(this.getAttribute('data-color'));
+                localStorage.setItem('color',this.getAttribute('data-color'));
+            });
+        });
+    </script>
+</body>
+</html>

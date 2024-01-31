@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link rel="stylesheet" href="/bootstrap.css">
+    <link rel="stylesheet" href="\Html\CSS\CreateAccount.css">
+   
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-6 overflow-hidden"><img src="\images\restorent_login.png" alt=""></div>
+          <div class="col-6">
+            <h1 class="d-flex justify-content-center">Create Account</h1>
+            <form action="/Html/Restorentmainpage.html" method="post" onsubmit="return validateForm()">
+
+                <div class="row">
+                    <div class="col-sm-12 col-lg-6 col-md-6">
+                        <label for="firstName">First Name <span>*</span></label>
+                        <input type="text" id="firstName" name="firstName" required oninput="validateStringInput(this)">
+                        <div id="firstNameError" class="error-message"></div>
+                    </div>
+            
+                    <div class="col-sm-12 col-lg-6 col-md-6">
+                        <label for="lastName">Last Name<span>*</span></label>
+                        <input type="text" id="lastName" name="lastName"  required oninput="validateStringInput(this)">
+                        <div id="lastNameError" class="error-message"></div>
+                    </div>
+            
+                    <div class="col-sm-12 col-lg-6 col-md-6">
+                        <label for="email">Email<span>*</span></label>
+                        <input type="email" id="email" name="email" required oninput="validateEmailInput(this)">
+                        <div id="emailError" class="error-message"></div>
+                    </div>
+            
+                    <div class="col-sm-12 col-lg-6 col-md-6">
+                        <label for="password">Password<span>*</span></label>
+                        <input type="password" id="password" name="password" required oninput="validatePasswordInput(this)" pattern="^(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{8,}$">
+                        <div id="passwordError" class="error-message"></div>
+                    </div>
+            
+                    <div class="col-sm-12 col-lg-6 col-md-6">
+                        <label for="phoneNumber">Phone Number<span>*</span></label>
+                        <input type="tel" id="phoneNumber" name="phoneNumber" required oninput="validatePhoneNumberInput(this)">
+                        <div id="phoneNumberError" class="error-message"></div>
+                    </div>
+            
+                    <div class="col-sm-12 col-lg-6 col-md-6">
+                        <label for="address">Address<span>*</span></label>
+                        <input type="text" id="address" name="address" required oninput="validateAddressInput(this)" pattern="^[a-zA-Z\s]{3,}$">
+                        <div id="addressError" class="error-message" ></div>
+                    </div>
+            
+                    <div class="col-sm-12 col-lg-6 col-md-6">
+                        <label for="dateOfBirth">Date of Birth</label>
+                        <input type="date" id="dateOfBirth" name="dateOfBirth">
+                    </div>
+            
+                    <div class="col-sm-12 col-lg-6 col-md-6">
+                        <label for="gender">Gender<span>*</span></label>
+                        <select id="gender" name="gender" required>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+            
+                    <div class="col-sm-12 col-lg-6 col-md-6">
+                        <label for="preferredLanguage">Preferred Language</label>
+                        <input type="text" id="preferredLanguage" name="preferredLanguage"  placeholder="English" readonly>
+                       
+                    </div>
+                </div>
+            
+                <button type="submit">Create Account</button>
+            </form>
+            
+          
+          </div>
+    </div>
+    </div>
+   
+    <script src="\Html\js\CreateAccount.js"></script>
+    <script src="\Html\js\Theme.js"></script>
+
+<link rel="stylesheet" href="\Html\CSS\Theme.css">
+</body>
+
+</html>

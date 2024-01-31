@@ -1,0 +1,15 @@
+.background-image-div {
+   /* background-image: url('/homePage1.png'); */
+    border: 2px solid black;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    color: #ffffff; 
+    font-size: 18px;
+    font-weight: bold;
+    
+}

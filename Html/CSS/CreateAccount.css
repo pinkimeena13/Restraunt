@@ -1,0 +1,184 @@
+@import url('/Html/CSS/Theme.css');
+:root {
+    --orangered-color:orangered;
+    --DarkBrown-color:#4d312c;
+    --lightPink-color:#fff4f2;
+    --white-color:white;
+    --lightGray-color:lightgray;
+    
+  } 
+body {
+    font-family: Arial, sans-serif;
+    
+    margin: 0;
+    padding: 0;
+    background-image: url('/restorent_bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+    width: 100%;
+    height: 100%;
+} 
+.container{
+    /* width: 50vw; */
+    height: 80vh;
+    margin: 50px auto;
+    padding: 20px;
+    background-color:rgb(243, 240, 240 , 0.3);
+    /* /background-color: var(--lightPink-color); */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow-y: auto;
+}
+h1{
+    color:var(--DarkBrown-color);
+    font-weight: bolder;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input,
+select {
+   width: 15vw;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 2px solid var(--lightGray-color);
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+input:hover, select:hover{
+    border: 2px solid var(--orangered-color);
+}
+label{
+    color: var(--DarkBrown-color);
+    font-weight: bold;
+}
+  .container button {
+    background-color: var(--orangered-color) ;
+    color: var(--white-color);
+    padding: 5px 10px;
+    border: 2px solid var(--orangered-color) ;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bolder;
+}
+button:hover
+{
+ background-color:var(--white-color);
+ color:var(--orangered-color);
+}
+.error-message {
+    color: red;
+    font-size: 12px;
+}
+span{
+    color: red;
+    font-weight: bolder;
+}
+
+ .cream .container {
+    background-color: rgb(245, 245, 220 ,0.3);
+ }
+ .cream button{
+    background-color: var(--DarkBrown-color);
+    border: 2px solid transparent;
+
+ }
+ .cream button:hover{
+    background-color:var(--white-color);
+    color: var(--DarkBrown-color);
+    border: 2px solid  var(--DarkBrown-color);
+ }
+ /* ================================== */
+
+ .skyblue .container {
+    background-color: rgb(135, 206, 235 , 0.3);
+
+ }
+ .skyblue button{
+    background-color: var(--DarkBrown-color);
+    border: 2px solid transparent;
+
+ }
+ .skyblue button:hover{
+    background-color:var(--white-color);
+    color: var(--DarkBrown-color);
+    border: 2px solid  var(--DarkBrown-color);
+ }
+/* ========================================== */
+ .MustartYellow .container {
+    background-color:rgb(255, 219,88,0.3);
+ }
+ .MustartYellow button{
+    background-color: var(--DarkBrown-color);
+    border: 2px solid transparent;
+
+ }
+ .MustartYellow button:hover{
+    background-color:var(--white-color);
+    color: var(--DarkBrown-color);
+    border: 2px solid  var(--DarkBrown-color);
+ }
+ /* =================================== */
+ .Default .container{ 
+    background-color:  rgb(255, 244, 242 ,0.3);
+ }
+ .Default button{
+    background-color: var(--DarkBrown-color);
+    border: 2px solid transparent;
+
+ }
+ .Default button:hover{
+    background-color:var(--white-color);
+    color: var(--DarkBrown-color);
+    border: 2px solid  var(--DarkBrown-color);
+ }
+ /* =============================== */
+ .pink .container{
+    background-color: rgb(240, 189, 197 ,0.3);
+ }
+ .pink button{
+    background-color: var(--DarkBrown-color);
+    border: 2px solid transparent;
+
+ }
+ .pink button:hover{
+    background-color:var(--white-color);
+    color: var(--DarkBrown-color);
+    border: 2px solid  var(--DarkBrown-color);
+ }
+ /* =========================== */
+.lightgray .container{
+    background-color: rgb(211, 211, 211 , 0.5);
+}
+.lightgray button{
+    background-color: var(--DarkBrown-color);
+    border: 2px solid transparent;
+
+ }
+ .lightgray button:hover{
+    background-color:var(--white-color);
+    color: var(--DarkBrown-color);
+    border: 2px solid  var(--DarkBrown-color);
+ }
+ /* ====================================== */
+.Lavender .container{
+    background-color: rgb(196, 178, 226 ,0.5);
+}
+.Lavender button{
+    background-color: var(--DarkBrown-color);
+    border: 2px solid transparent;
+
+ }
+ .Lavender button:hover{
+    background-color:var(--white-color);
+    color: var(--DarkBrown-color);
+    border: 2px solid  var(--DarkBrown-color);
+ }
+ /* ========================================== */

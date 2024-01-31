@@ -1,0 +1,88 @@
+
+.save_div ,.save_div2{
+    border: 2px solid transparent;
+    border-radius: 20px;
+   padding-left: 5%;
+   padding-right: 5%;
+   padding-top: 2%;
+   padding-bottom: 2%;
+   background-color: rgba(202, 202, 214, 0.4);
+   color: rgb(20, 20, 143);
+   font-weight: bolder;
+}
+.save_div2{
+    color: #fc5185;
+    background-color: rgba(242, 209, 233, 0.4);
+}
+.month_div{
+    color: rgb(20, 20, 143);
+   font-weight: bolder;
+   margin-left: 30%;
+}
+.month_div2{
+    color: #fc5185;
+   font-weight: bolder;
+   margin-left: 30%;
+}
+.btn{
+    background-color:rgb(20, 20, 143);
+    font-weight: bolder;
+    padding-left: 15%;
+    padding-right: 15%;
+  
+}
+.btn2{
+    background-color: #fc5185;
+    font-weight: bolder;
+    padding-left: 15%;
+    padding-right: 15%;
+    border: none;
+    color: white;
+  
+}
+
+.btn:hover{
+    background-color:rgb(9, 9, 59);
+    font-weight: bolder;
+}
+
+.btn2 :hover{
+    background-color: #801132 !important;
+    font-weight: bolder;
+}
+.price{
+    color: rgb(20, 20, 143);
+
+}
+.first_fea{
+color: rgb(2, 2, 71);
+font-weight: bolder;
+
+}
+ul {
+list-style: none;
+}
+li{
+color: rgb(13, 13, 102);
+margin-top: 3%;
+font-size: 13px;
+
+}
+li span{
+font-weight: bolder;
+}
+ul li:before {
+content: '✓';
+font-weight: bolder;
+font-size: larger;
+
+
+}
+.card{
+transition: transform 0.3s ease-in-out;
+}
+.card:hover{
+transform: scale(1.02); 
+box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+

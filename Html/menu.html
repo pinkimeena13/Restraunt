@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="/bootstrap.css">
+    <link rel="stylesheet" href="\Html\CSS\menu.css">
+
+</head>
+<body>
+    <div class="container-fluid ">
+       <!-- //order modal   -->
+    </div>
+    <div class="modal fade" id="exampleModal2" tabindex="-1"
+    aria-labelledby="exampleModalLabel2" aria-hidden="true">
+    <div class="modal-dialog  modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <!-- <h5 class="modal-title" id="exampleModalLabel2">Modal 2 Title</h5> -->
+                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Modal content goes here -->
+                <div class="container order-form">
+                    <h2 class=" text-center"> Order </h2>
+                    <form>
+                      <!-- Customer Information Section -->
+                      <div class="mb-3">
+                        <h5>Customer Information</h5>
+                        <div class="row">
+                          <div class="col-md-4">
+                            <label for="customerName" class="form-label">Customer Name</label>
+                            <input type="text" class="form-control" id="customerName" name="customerName" required>
+                          </div>
+                          <div class="col-md-4">
+                            <label for="contactNumber" class="form-label">Contact Number</label>
+                            <input type="tel" class="form-control" id="contactNumber" name="contactNumber" required>
+                          </div>
+                          <div class="col-md-4">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                          </div>
+                        </div>
+                        <!-- Add more customer information fields as needed -->
+                      </div>
+                  
+                      <!-- Order Details Section -->
+                      <div class="mb-3">
+                        <h5>Order Details</h5>
+                        <div class="row">
+                          <div class="col-md-6">
+                            <label for="itemsSelection" class="form-label">Select Items</label>
+                            <select class="form-select" id="itemsSelection" name="itemsSelection" required>
+                              <option value="" selected disabled>Select an item</option>
+                              <option value="item1">Paneer Butter</option>
+                              <option value="item2">Biryani</option>
+                              <option value="item3">Malai Kofta</option>
+                              <option value="item4">Dal</option>
+                              <option value="item5">Chana Masala</option>
+                              <option value="item6">Burger</option>
+                              <option value="item7">sandwich</option>
+                              <option value="item8">French Fries</option>
+                              <option value="item9">Pizza</option>
+                              <option value="item10">Noodles</option>
+                              <option value="item11">Ice Creame</option> 
+                               <option value="item12">Donut</option>
+                               <option value="item13">Tea</option>
+                               <option value="item14">Coffee</option>
+                              <!-- Add more options as needed -->
+                            </select>
+                          </div>
+                          <div class="col-md-3">
+                            <label for="quantity" class="form-label">Quantity</label>
+                            <input type="number" class="form-control" id="quantity" name="quantity" min="1" required>
+                          </div>
+                          <div class="col-md-3">
+                            <label for="deliveryTime" class="form-label">Delivery Time</label>
+                            <input type="time" class="form-control" id="deliveryTime" name="deliveryTime" required>
+                          </div>
+                        </div>
+                        <!-- Add more order details fields as needed -->
+                      </div>
+                  
+                      <!-- Additional Information Section -->
+                      <div class="mb-3">
+                        <h5>Additional Information</h5>
+                        <div class="row">
+                          <div class="col-md-6">
+                            <label for="specialRequests" class="form-label">Special Requests</label>
+                            <textarea class="form-control" id="specialRequests" name="specialRequests" rows="3"></textarea>
+                          </div>
+                          <div class="col-md-6">
+                            <label for="allergies" class="form-label">Allergies</label>
+                            <input type="text" class="form-control" id="allergies" name="allergies">
+                          </div>
+                        </div>
+                        <!-- Add more additional information fields as needed -->
+                      </div>
+                  
+                      <!-- Payment Information Section -->
+                      <div class="mb-3">
+                        <h5>Payment Information</h5>
+                        <div class="row">
+                          <div class="col-md-6">
+                            <label for="cardNumber" class="form-label">Card Number</label>
+                            <input type="text" class="form-control" id="cardNumber" name="cardNumber" required>
+                          </div>
+                          <div class="col-md-3">
+                            <label for="expiryDate" class="form-label">Expiry Date</label>
+                            <input type="month" class="form-control" id="expiryDate" name="expiryDate" required>
+                          </div>
+                          <div class="col-md-3">
+                            <label for="cvv" class="form-label">CVV</label>
+                            <input type="text" class="form-control" id="cvv" name="cvv" required>
+                          </div>
+                        </div>
+                        <!-- Add more payment information fields as needed -->
+                      </div>
+                  
+                      <!-- Submit Button -->
+                      <button type="submit" class="btn btn-primary submit">Submit</button>
+                      <button type="button" class="btn  close" data-bs-dismiss="modal">Close</button>
+                    </form>
+                    <hr class=" mb-5">
+                  </div>  
+            </div>
+           
+        </div>
+    </div>
+</div>
+        
+    <div class="container">
+       <div class="row"> <div class="mt-5"> <h1 class="d-flex justify-content-center text-center ">Menu</h1></div>
+       <div class="d-flex justify-content-end me-5"><button type="button" class="btn me-3 "data-bs-toggle="modal"
+           data-bs-target="#exampleModal2">Order Now</button></div>
+
+        <div class="row mt-5">
+            <div class="col-sm-12 col-md-3 col-lg-3 ">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="\butterpaneer.png" alt="" class="img-fluid ms-4 me-5  " height="100vh" width="150vw">
+                     
+                    </div>
+                    <div class="ms-3">   <h3>Paneer Butter</h3>
+                        <p>₹300.00</p></div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-3 col-lg-3 ">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="\images\biryani.png" alt="" class="img-fluid ms-4"  height="100vh" width="125vw">
+                      
+                    </div>
+                    <div class="ms-3">  <h3>Biryani</h3>
+                        <p>₹200.00</p></div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-3 col-lg-3 ">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="\images\Dal.png" alt="" class="img-fluid ms-4" height="100vh" width="185vw">
+                      
+                    </div>
+                    <div class="ms-3">  <h3>Dal</h3>
+                        <p>₹200.00</p></div>
+                </div>
+
+            </div>
+            <div class="col-sm-12 col-md-3 col-lg-3 ">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="\images\chana_masala.png" alt="" class="img-fluid ms-4" width="120vw">
+                        
+                    </div>
+                    <div class="ms-3"><h3>Chana Masala</h3>
+                        <p>₹250.00</p></div>
+                </div>
+            </div>
+            </div>
+
+            <!-- //second row -->
+            <div class="row mt-5">
+                <div class="col-sm-12 col-lg-3 col-md-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="\images\Fast_food.png" alt=""  class="ms-5 img-fluid " height="150vh" width="150vw">
+                            
+                        </div>
+                        <div class="ms-3"><h3>Burger</h3>
+                            <p>₹350.00</p></div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-3 col-md-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="\images\sandwich.png" alt="" class="img-fluid ms-5" height="100vh" width="150vw">
+                        </div>
+                        <div class="ms-3"> <h3>standwich</h3>
+                            <p>₹150.00</p></div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-3 col-md-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="\images\french_fries.png" alt="" class="img-fluid ms-5 mt-3" height="100vh" width="150vh">
+                            
+                        </div>
+                        <div class="ms-3"> 
+                            <h3>French Fries</h3>
+                            <p>₹300.00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-3 col-md-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="\images\noodles.png" alt="" class="img-fluid ms-5 " height="100vh" width="120vw">
+                        </div>
+                        <div class="ms-3"> 
+                            <h3>French Fries</h3>
+                            <p>₹280.00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- //thrid row -->
+            <div class="row mt-5 mb-5">
+                <div class="col-sm-12 col-lg-3 col-md-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="\images\Ice_creame.png" alt="" class="img-fluid ms-5" height="100vh" width="120vw">
+                        </div>
+                        <div class="ms-3">
+                            <h3>Ice Creame</h3>
+                            <p>₹450.00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-3 col-md-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="\images\Donut.png" alt="" class="img-fluid ms-5" height="100vh" width="120vw">
+                        </div>
+                        <div class="ms-3">
+                            <h3>Donut</h3>
+                            <p>₹300.00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-3 col-md-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="\images\Tea.png" alt="" class="img-fluid ms-5 mt-1" height="100vh" width="120vw">
+                        </div>
+                        <div class="ms-3">
+                            <h3>Tea</h3>
+                            <p>₹100.00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-3 col-md-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="\images\Coffee.png" alt="" class="img-fluid ms-5" height="100vh" width="150vw">
+                        </div>
+                        <div class="ms-3">
+                            <h3>Coffee</h3>
+                            <p>₹200.00</p></div>
+                    </div>
+                </div>
+            </div>
+            <script src="\bootstrap.js"></script>
+    </div>
+    </div>
+</body>
+</html>
